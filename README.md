@@ -1,6 +1,9 @@
 # gmt-book
 
-install required packages:
+You need docker to build the files.
+
+Build with:
+
 ```
-sudo apt install python2 latex-cjk-all
+docker run --rm -i --user="$(id -u):$(id -g)" --net=none -v "$PWD":/data blang/latex:ubuntu scripts/build.sh
 ```

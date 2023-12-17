@@ -1,0 +1,24 @@
+name: build book pdf
+on: [push]
+jobs:
+  BuildPdf:
+    runs-on: blang/latex:ubuntu
+    permissions: write-all
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - run: scripts/build.sh
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d_%H.%M')"
+      - run: echo "the current date is ${{ steps.date.outputs.date }}"
+      - name: create Release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ steps.date.outputs.date }}
+          artifacts: "book.pdf"
+          artifactContentType: "application/pdf"
+          body: "${{ github.event.head_commit.message }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
