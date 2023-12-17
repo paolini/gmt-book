@@ -1,0 +1,45 @@
+# List of current tags in the stacks project
+# Each line is of the form
+#	tag,full_label
+# where full label is the label as it occurs in book.tex
+# this means that if you see a line
+#	\label{lemma-separated}
+# in the file schemes.tex then the full_label is
+#	schemes-lemma-separated
+0000,introduction-section-phantom
+0001,introduction-section-overview
+0002,conventions-section-phantom
+0003,conventions-section-comments
+0004,conventions-section-sets
+0005,conventions-section-categories
+0006,conventions-section-algebra
+0007,sets-section-phantom
+0008,sets-section-introduction
+0009,sets-section-sets-everything
+000A,sets-section-classes
+000B,sets-section-sets-hierarchy
+000C,sets-lemma-axiom-regularity
+000D,sets-section-cardinals
+000E,sets-section-cofinality
+000F,sets-section-reflection-principle
+000G,sets-theorem-reflection-principle
+000H,sets-section-categories-schemes
+000I,sets-lemma-bounded-size
+000J,sets-lemma-construct-category
+000K,sets-item-inclusion
+000L,sets-item-bounded
+000M,sets-item-limit
+000N,sets-item-colimit
+000O,sets-remark-how-to-use-reflection
+000P,sets-lemma-bound-affine
+000Q,sets-lemma-bound-size
+000R,sets-lemma-what-is-in-it
+000S,sets-remark-what-is-not-in-it
+000T,sets-section-sets-with-group-action
+000U,sets-lemma-sets-with-group-action
+000V,sets-lemma-what-is-in-it-G-sets
+000W,sets-section-coverings-site
+000X,sets-lemma-coverings-site
+000Y,sets-remark-better
+000Z,sets-section-abelian-categories-injectives
+0010,sets-lemma-abelian-injectives
