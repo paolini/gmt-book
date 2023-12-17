@@ -1,8 +1,8 @@
 name: build book pdf
 on: [push]
 jobs:
-  BuildPdf:
-    runs-on: blang/latex:ubuntu
+  Build-Pdf:
+    runs-on: ubuntu-latest
     permissions: write-all
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."

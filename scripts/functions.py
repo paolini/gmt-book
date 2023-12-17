@@ -42,7 +42,7 @@ def git_version(path):
 	p = Popen(cmd, shell=True, stdout=PIPE).stdout
 	version = p.read()
 	p.close()
-	return version
+	return version.decode('utf-8')
 
 # Check if the line contains a label
 def is_label(env_text):
